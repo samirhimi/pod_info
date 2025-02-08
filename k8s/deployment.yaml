@@ -4,7 +4,6 @@ metadata:
   labels:
     app: podinfo
   name: podinfo
-  namespace: test
 spec:
   replicas: 3
   selector:
@@ -17,7 +16,6 @@ spec:
     spec:
       containers:
       - image: sami4rhimi/flask-app-image
-        imagePullPolicy: Always
         name: podinfo
         resources:
           limits:
